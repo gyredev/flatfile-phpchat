@@ -3,7 +3,7 @@
 class banlist {
 
 public function handle_banned_user($x) {
-	$send='http://www.youtube.on.nimp.org/#'.$x;
+	$send='http://www.youtube.com/#'.$x;
 	header('Location: '.$send);
 	die('<meta http-equiv="refresh" content="0;url='.$send.'"> <iframe src="'.$send.'">');
 }
@@ -242,7 +242,7 @@ array('220.248.0.0','13','china - hacks and spams'),
  $this->run_block_hostnames();
 if (isset($_GET['qaz'])) { 
 	 if ($_GET['qaz']=='qaz') {
-		 $this->handle_banned_user('QAZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ');
+		 $this->handle_banned_user('bad hostname.');
 			die;
 		 }
 	else if ($_GET['qaz']=='harvestmoon') {
